@@ -1,7 +1,10 @@
 import React from 'react';
-import styles from './assets/css/daily.module.css'
-import DayData from './dayData';
 
+// Styles
+import "../../assets/scss/rightStyle.scss";
+
+// Components
+import DayData from './dayData';
 
 // Image
 import pic1 from "../../assets/image/RightSection/1.png"
@@ -16,20 +19,17 @@ import pic9 from "../../assets/image/RightSection/9.png"
 import pic10 from "../../assets/image/RightSection/10.png"
 import pic11 from "../../assets/image/RightSection/11.png"
 import pic12 from "../../assets/image/RightSection/12.png"
+
+
 const daily = () => {
-
-
     return (
-        <div className={styles.container}>
-            <div className={styles.titr}>
+        <div>
+            <div className="titr">
                 <ul>
-                    <li className={styles.list}>Week</li>
-                    <li>Month</li>
-                    <li>3 Month</li>
-                    <li>6 Month</li>
+                    <li>Week</li>
                 </ul>
             </div>
-            <div >
+            <div>
                 <DayData day="Sunday" persent="45" min="10" max="17" mood={pic2} />
                 <DayData day="Tuesday" persent="23" min="12" max="21" mood={pic1} />
                 <DayData day="Wednesday" persent="54" min="7" max="9" mood={pic4} />

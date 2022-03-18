@@ -1,21 +1,23 @@
 import React,{useContext} from 'react';
+
 // Styles
 import "../../assets/scss/rightStyle.scss";
+
 // Components
 import Card from './card';
+
 // Image
 import pic1 from '../../assets/image/RightSection/Florans.png'
 import pic2 from '../../assets/image/RightSection/NewYork.png'
 import pic3 from '../../assets/image/RightSection/Paris.png'
 
+// Context
 import { CityContext } from '../../Context/WeatherContext';
 
 const Favorite = () => {
+    
     const cityContext = useContext(CityContext)
 
-    
-    
-    
     return (
         <div className="favoriteContainer">
             <div className="favoriteTitle">

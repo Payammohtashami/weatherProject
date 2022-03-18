@@ -1,6 +1,8 @@
 import React, { useContext, useState } from 'react';
+
 // Styles
 import "../../assets/scss/rightStyle.scss";
+
 // Context
 import { CityContext} from '../../Context/WeatherContext';
 
@@ -11,16 +13,14 @@ const Header = () => {
     const [search , setSearch] = useState("");
 
 
-    
+// Handler
     const searchHandler = e => {
         setSearch(e.target.value)
     }
     const cityhHandler = () => {
             cityContext(search)
             setSearch("")
-            
-    }
-    
+    }  
 
     return (
         <>

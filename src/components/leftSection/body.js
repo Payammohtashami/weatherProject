@@ -1,14 +1,14 @@
 import React from 'react';
+// Styles
 import   '../../assets/scss/leftStyles.scss'
 
+// Functions
 import { WeekDays , Month ,dayTime , hour , setMood } from '../../helper/functions'
-
 
 const Body = ({name , temp , country ,desc }) => {
 
-
-
-    let temp1 = temp - 273
+    // Change Fahrenheit to Celsius
+    let temp1 = temp - 273;
 
     const days = new Date().getDate()
 

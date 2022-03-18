@@ -170,6 +170,21 @@
 }
 
 
+.titr {
+    margin: 80px 0 20px 0;
+    ul{
+        list-style: none;
+        display: flex;
+        
+        li {
+            font-weight: bold;
+            padding: 5px 10px;
+            cursor: pointer;
+            color: #05053d;
+            border-bottom: 2px solid #05053d;
+    }
+}
+}
 @media(max-width : 1080px) {
     
 }

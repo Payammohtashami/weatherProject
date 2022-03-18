@@ -9,8 +9,6 @@ import Daily from './daily';
 
 
 const Layout = () => {
-    
-
 
     return (
         <div className="rightMainContainer">

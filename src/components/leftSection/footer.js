@@ -1,9 +1,9 @@
 import React from 'react';
+// Styles
 import '../../assets/scss/leftStyles.scss';
+
+// Styled Components
 import styled from 'styled-components'
-
-
-
 const TD = styled.td`
         &:hover {
         color: #ffcc00;

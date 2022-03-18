@@ -6,7 +6,6 @@ import Body from './body';
 import Footer from './footer';
 import Loading from '../loading/layout'
 
-
 // Styles
 import '../../assets/scss/leftStyles.scss';
 
