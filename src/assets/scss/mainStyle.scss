@@ -1,0 +1,50 @@
+@import "variable";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  .mainContainer {
+    display: flex;
+    border-radius: 15px;
+    width: 80%;
+    overflow: hidden;
+    box-shadow: $shadow;
+
+    .leftContainer {
+      width: 35%;
+      background-color: $mainColor;
+      
+    }
+    .rightContainer {
+      width: 65%;
+    }
+  }
+}
+
+@media(max-width : 1080px) {
+  .App {
+    
+    .mainContainer {
+    flex-direction: column;
+    width: 95%;
+
+    .leftContainer {
+      width: 100%;
+      
+    }
+    .rightContainer {
+      width: 100%;
+      margin: 50px 0;
+      }
+    }
+  }
+}

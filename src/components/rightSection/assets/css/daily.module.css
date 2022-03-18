@@ -1,0 +1,18 @@
+.titr {
+    margin-top: 80px;
+}
+.titr ul{
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+    color: #05053d50;
+}
+.titr ul>li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.list {
+    color: #05053d;
+    border-bottom: 2px solid #05053d;
+    margin-bottom: 20px;
+}

@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+
+// Styles
+import './assets/scss/mainStyle.scss'
+//Components
+import Leftlayout from './components/leftSection/layout';
+import Rightlayout from './components/rightSection/layout';
+
+// Context
+import Weather from './Context/WeatherContext';
+// toast
 
 function App() {
+  
+
+  document.title = "Weather";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Weather>
+      <div className="App">
+        {/* <button onClick={clickHandler}>click</button> */}
+        <div className="mainContainer">
+          <div className="rightContainer">
+            <Rightlayout />
+          </div>
+          <div className="leftContainer">
+            <Leftlayout/>
+          </div>
+        </div>
+      </div>
+    </Weather>
   );
 }
 
